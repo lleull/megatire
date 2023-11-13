@@ -1,0 +1,25 @@
+.collections
+    {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        background: black;
+        color: wheat;
+        margin: 10px;
+
+      
+        }
+.timages{
+    width: 100px;
+    height: 100px;
+}
+
+.image{
+    border-right: 2px solid white;
+    width: 30%;
+}
+.addbutton{
+    padding: 5px 20px;
+    background-color: brown;
+    border: none;
+}

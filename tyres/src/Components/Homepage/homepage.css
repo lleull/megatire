@@ -1,0 +1,63 @@
+.homepage{
+    width: 100%;
+    height: 43vh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(120deg, rgb(36, 28, 28), white);
+}
+
+.imgclass{
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+    animation: image 3s ease-in-out;
+}
+@-webkit-keyframes image{
+    from{
+        
+    }
+
+}
+.sumbutton{
+    padding: 23px;
+    @media (width < 800px) {
+        padding: 0;
+        height: 60px;
+        background-color: rgb(0, 0, 0);
+        padding: 0 23px;
+        color: wheat;
+}
+}
+.small{
+    display: block;
+
+    @media (width < 800px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+}
+
+.summary{
+    margin: 30px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2, 22, 17);
+    color: white;
+    padding: 2px 50px;
+    @media (width <800px) {
+        display: flex;
+        margin: 20px;
+        font-size: 12px;
+    }
+}
+.h1class{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 500;
+    @media (width <800px) {
+        font-size: 14px;
+    }
+}

@@ -3,9 +3,15 @@
         justify-content: space-around;
         align-items: center;
         display: flex;
-        background: black;
+        width: 70%;
+        background: rgba(65, 55, 55, 0.651);
         color: wheat;
-        margin: 10px;
+        border-bottom: 1px solid white;
+         box-sizing: border-box;
+         margin: 10px;
+        animation: tires 1s ease-in-out;
+        overflow-y: hidden;
+        overflow-x: hidden;
 
       
         }
@@ -23,3 +29,12 @@
     background-color: brown;
     border: none;
 }
+
+@keyframes tires {
+    from{
+        opacity: 0;transform: translateY(2rem);}
+        to{
+        opacity: 3; transform: translateY(0);}
+
+}
+

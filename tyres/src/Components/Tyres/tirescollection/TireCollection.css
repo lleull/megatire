@@ -1,4 +1,25 @@
 .tirescollection{
    width: 100%;
-   background: black;
+   display: flex;
+     
+    align-items: center;
+   width: 100%;
+   
+   height: 300vh;
+   flex-direction: column;
+   background: linear-gradient(230deg, black, rgb(20, 4, 4));
+   animation: tires 2s ease-in;
+   overflow-y: hidden;
+   overflow-x: hidden;
+
+   @media (width < 800px) {
+     margin: 0;
+     width: 100%;
+   }
+
+   
+}
+.texttag{
+    text-align: center;
+    color: white;
 }

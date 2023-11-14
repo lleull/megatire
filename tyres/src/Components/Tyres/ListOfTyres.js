@@ -9,7 +9,7 @@ const Dummy_tires = [
       tyre_type: 'Radical',
       Rim_Diam: '12 inch',
       vehicle: 'car',
-      price: '20000',
+      price: '40000',
       image: tireimage
     },
     {
@@ -20,7 +20,7 @@ const Dummy_tires = [
         tyre_type: 'Radical',
         Rim_Diam: ' 16 Inch',
         vehicle: 'car',
-        price: '20000',
+        price: '10000',
     },
     {
         id: 'ti3',
@@ -30,7 +30,7 @@ const Dummy_tires = [
         tyre_type: 'Radical',
         Rim_Diam: ' 16 Inch',
         vehicle: 'car',
-        price: '20000',
+        price: '23530',
     },
     {
         id: 'ti4',
@@ -40,7 +40,7 @@ const Dummy_tires = [
         tyre_type: 'Radical',
         Rim_Diam: ' 16 Inch',
         vehicle: 'car',
-        price: '20000',
+        price: '17300',
     },
     {
         id: 'ti5',
@@ -50,7 +50,7 @@ const Dummy_tires = [
         tyre_type: 'Radical',
         Rim_Diam: ' 16 Inch',
         vehicle: 'car',
-        price: '20000',
+        price: '15600',
     },
     {
         id: 'ti6',
@@ -60,7 +60,7 @@ const Dummy_tires = [
         tyre_type: 'Radical',
         Rim_Diam: ' 16 Inch',
         vehicle: 'car',
-        price: '20000',
+        price: '12500',
     }
 ]
 

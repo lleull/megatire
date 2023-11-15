@@ -1,29 +1,35 @@
 import React from "react";
 import Modal from "../UI/Modal";
+import { useContext } from "react";
+import Cartcontext from "../../store/store";
+import Cartpage from "./Cartpage";
+import './Cart.css'
+
 const Cart = (props) => {
-    const displayer = (props.displaycarts)
-  return (
-    <Modal onClose={displayer}>
-      <div className="cartpage">
-        <div className="itemlist">
+  const {items}= useContext(Cartcontext);
+  const {totalAmount} = useContext(Cartcontext)
 
-    
-        <div className="img-price">
+  const displayer = props.displaycarts;
 
-        </div>
-        <div className="actions">
-            <div className="buts">
-               <button className="buttons">x</button>
-            </div>
-        </div>
-        </div>
 
-        <div className="">
-              <button>Close</button>
-              <button>order</button>
-            </div>
-      </div>
-    </Modal>
+  console.log(items)
+
+    return (
+      <Modal onClose={displayer}>
+          
+            
+             <Cartpage/>
+             <div className="manageorder">
+              <h2>Total-Amount: {totalAmount}</h2>
+             <div className="buttonaction">
+             <button className="closebt">Close</button>
+             <button className="orderbt">Order </button>
+             </div>
+             </div>
+            
+          
+      </Modal>
+  
   );
 };
 

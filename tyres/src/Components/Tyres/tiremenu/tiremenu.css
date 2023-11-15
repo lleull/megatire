@@ -13,6 +13,13 @@
         overflow-y: hidden;
         overflow-x: hidden;
 
+        @media (width < 800px) {
+            width: 100%;
+            background-color: rgb(255, 238, 238);
+            color: black;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
       
         }
 .timages{
@@ -23,6 +30,10 @@
 .image{
     border-right: 2px solid white;
     width: 30%;
+    @media (width < 800px) {
+       
+        border-right: 1px solid rgb(0, 0, 0);
+    }
 }
 .addbutton{
     padding: 5px 20px;

@@ -1,19 +1,27 @@
-import React from "react";
+import React  from "react";
 import "./tiremenu.css";
+import { useContext } from "react";
+import Cartcontext from "../../../store/store";
+import Tireform from "../tireInput/tireform";
 const Tiremenu = (props) => {
 
-  // const data = [
-  //   {
-  //     key: props.id,
-  //     name: props.name,
-  //     price: props.price,
-  //     image: props.image,
-  //     id: props.id,
-  //     size: props.size,
-  //     rim: props.rim,
-  //     price: props.price,
-  //   },
-  // ];
+  const Cartctx = useContext(Cartcontext)
+  
+const HandleItemsToCart = (amount) => {
+  Cartctx.addItem({
+     name: props.name,
+     id: props.id,
+     amount: amount,
+     key: props.id,
+     price: props.price,
+     image: props.image,
+   
+  })
+}
+
+  
+
+ 
 
   return (
     <li className="collections">
@@ -31,10 +39,8 @@ const Tiremenu = (props) => {
       </div>
 
       <div className="actions">
-        <button  className="addbutton">
-          ADD TO CART
-        </button>
-      </div>
+         <Tireform additemtocart={HandleItemsToCart} />
+      </div> 
     </li>
   );
 };

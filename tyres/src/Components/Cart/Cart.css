@@ -1,0 +1,32 @@
+.orderbt{
+    padding: 10px 20px;
+    width: 30%;
+    background: rgb(78, 33, 33);
+    border-radius: 17px;
+    border: 1px solid black;
+    font-size: 17px;
+    font-weight: 600;
+}
+.buttonaction{
+    display: flex;
+    justify-content: space-around;
+}
+.closebt{
+    padding: 10px 20px;
+    width: 30%;
+    background: transparent;
+    border-radius: 17px;
+    border: 1px solid rgb(49, 20, 20);
+
+
+}
+.closebt:hover{
+    background-color: black;
+    color: wheat;
+}
+.orderbt:hover{
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: 2px solid black;
+    
+}

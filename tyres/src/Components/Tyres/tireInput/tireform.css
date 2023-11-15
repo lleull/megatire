@@ -1,0 +1,23 @@
+.display{
+    
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    @media (width < 800px) {
+        width: 0;
+    }
+
+
+
+}
+.labels{
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+    font-family: cursive;
+}

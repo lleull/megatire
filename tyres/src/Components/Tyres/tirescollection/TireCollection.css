@@ -13,8 +13,9 @@
    overflow-x: hidden;
 
    @media (width < 800px) {
-     margin: 0;
+     
      width: 100%;
+     
    }
 
    

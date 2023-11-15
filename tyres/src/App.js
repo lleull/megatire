@@ -5,28 +5,25 @@ import Cart from "./Components/Cart/Cart";
 import Header from "./Components/header/header";
 import Homepage from "./Components/Homepage/Homepage";
 import TireCollection from "./Components/Tyres/tirescollection/TireCollection";
+
 const App = () => {
   const [cartspage, setcartspage] = useState(false);
 
   const displaycart = () => setcartspage(!cartspage);
   return (
-    
     <CartContextProvide>
       <>
-      <Header displaycarts={displaycart} />
-      <div className="App">
-        <Homepage />
-        <TireCollection />
+ 
+          <Header displaycarts={displaycart} />
+          <div className="App">
+            <Homepage />
+            <TireCollection />
 
-        {cartspage && <Cart displaycarts={displaycart} />}
-      </div>
-     
+            {cartspage && <Cart displaycarts={displaycart} />}
+          </div>
     
-    </>
-    
+      </>
     </CartContextProvide>
-      
-   
   );
 };
 

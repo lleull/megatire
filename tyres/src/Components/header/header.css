@@ -24,6 +24,12 @@
     align-items: center;
     justify-content: center;
     margin: 30px;
+
+    @media (width < 800px) {
+      margin: 0;
+      display: flex;
+      
+    }
 }
 .listmenu{
 

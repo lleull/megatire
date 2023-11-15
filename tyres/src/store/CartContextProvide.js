@@ -4,7 +4,7 @@ import React from 'react'
 
 const defualtState = {
     items: [],
-    totalAmount: 0
+    totalAmount: 0,
 }
 
 const cartreducer =(state, action) => {

@@ -10,6 +10,7 @@
 
     @media (width < 800px) {
         width: 0;
+        margin: 20px;
     }
 
 
@@ -20,4 +21,14 @@
     font-weight: 600;
     color: black;
     font-family: cursive;
+}
+
+.submitbutton{
+    margin-top: 10vh;
+    padding: 17px 25px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-weight: 800;
+    font-family: fantasy;
 }

@@ -11,6 +11,11 @@
     display: flex;
     justify-content: space-around;
 }
+.cartitems{
+    max-height: 35vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 .closebt{
     padding: 10px 20px;
     width: 30%;

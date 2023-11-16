@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(120deg, rgb(36, 28, 28), white);
+   margin-top: 10vh;
 }
 
 .imgclass{

@@ -17,12 +17,14 @@ const Cart = (props) => {
     return (
       <Modal onClose={displayer}>
           
-            
-             <Cartpage/>
+            <div className="cartitems">
+<Cartpage/>
+            </div>
+             
              <div className="manageorder">
-              <h2>Total-Amount: {totalAmount}</h2>
+              <h2>Total-Amount: ${totalAmount}</h2>
              <div className="buttonaction">
-             <button className="closebt">Close</button>
+             <button onClick={props.displaycarts} className="closebt">Close</button>
              <button className="orderbt">Order </button>
              </div>
              </div>

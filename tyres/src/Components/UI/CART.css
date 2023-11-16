@@ -11,5 +11,9 @@
 
     @media (width  <800px) {
         padding: 0;
+        width: 90%;
+        align-self: self-start;
+        justify-content: start;
+        
     }
   }

@@ -17,7 +17,7 @@ const App = () => {
           <Header displaycarts={displaycart} />
           <div className="App">
             <Homepage />
-            <TireCollection />
+            <TireCollection closecart={displaycart} />
 
             {cartspage && <Cart displaycarts={displaycart} />}
           </div>

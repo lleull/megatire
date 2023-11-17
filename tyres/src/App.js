@@ -5,6 +5,7 @@ import Cart from "./Components/Cart/Cart";
 import Header from "./Components/header/header";
 import Homepage from "./Components/Homepage/Homepage";
 import TireCollection from "./Components/Tyres/tirescollection/TireCollection";
+import About from "./Components/About/About";
 
 const App = () => {
   const [cartspage, setcartspage] = useState(false);
@@ -21,8 +22,9 @@ const App = () => {
 
             {cartspage && <Cart displaycarts={displaycart} />}
           </div>
-    
+          <About/>
       </>
+   
     </CartContextProvide>
   );
 };

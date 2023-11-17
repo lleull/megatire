@@ -24,7 +24,7 @@ const Header = (props) => {
         <div className='cart'>
             <button onClick={display} className='header-button'> 
             <img className='cartimg' src={shoppingCart} alt='shop'/>
-            Shop-List <h3 className='amountnum'>{adnumber}</h3> </button>
+            ShopCart <h3 className='amountnum'>{adnumber}</h3> </button>
             <div className='menubar'>
        {/* <img className='menuimage' src={meunbars} alt='menu'/> */}
         </div>

@@ -2,7 +2,7 @@
         justify-content: space-around;
         align-items: center;
         display: flex;
-        width: 70%;
+        width: 90%;
         
         color: wheat;
         border-bottom: 1px solid white;
@@ -19,12 +19,18 @@
             align-items: self-start;
             border-bottom: 1px solid rgb(255, 252, 252);
 
-            @media (width < 480px) {
+            @media (width < 500px) {
      
                 width: 100%;   
                 display: flex;
+               
            
                }
+        }
+
+        .name{
+            color: black;
+            font-weight: 500;
         }
 
       
@@ -73,7 +79,9 @@ margin-left: 5vh;
 
 .image{
     border-right: 2px solid white;
-    width: 50%;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
     @media (width < 800px) {
          width: 200px;
         border-right: 1px solid rgb(0, 0, 0);
@@ -99,9 +107,10 @@ margin-left: 5vh;
 
 }
 .pricepage{
-    color: rgb(0, 0, 0);
+    color: rgb(43, 7, 80);
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 400;
 
 }

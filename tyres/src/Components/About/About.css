@@ -1,0 +1,47 @@
+.container-about{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    background-color: wheat;
+
+    @media (width < 600px) {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 39rem;
+    }
+}
+.headmega{
+    font-size: 23px;
+    text-align: center;
+}
+
+.about-page{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    @media (width < 490px) {
+        width: 300px;
+    }
+    
+}
+
+.paragraph{
+    color: rgb(5, 55, 99);
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    @media (width < 490px) {
+        width: 100%;
+        font-size: 17px;
+    }
+    
+}
+.about-second{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}

@@ -6,6 +6,7 @@ const isempty = (value) => value.trim().length === 0;
 const isNot5chars = (value) => value.trim().length === 5;
 
 const Checkout = (props) => {
+  const [SuccesfullyOrdered, setSuccesfullyOrdered] = useState(false)
   const [formValidity, setValidity] = useState({
     name: true,
     address: true,
@@ -50,11 +51,15 @@ const Checkout = (props) => {
       return;
     }
     //submit to firebase json.stringify()
+
+    setSuccesfullyOrdered(!SuccesfullyOrdered)
   };
 
   const submit = props.onSubmit;
   return (
     <form className="myform" onSubmit={comfirmHandler}>
+      {!SuccesfullyOrdered && 
+      <>
       <div className={formValidity.name ? "control" : "invalid"}>
         <label htmlFor="name">Your name</label>
         <input className="myinput" ref={nameinput} type="text" id="name" placeholder="name" />
@@ -99,6 +104,9 @@ const Checkout = (props) => {
           Cancel
         </button>
       </div>
+      </>
+      }
+      {SuccesfullyOrdered && <h3 className="successmessage">Succesfully Ordered Your Package will Delivered as soon as possible...</h3>}
     </form>
   );
 };

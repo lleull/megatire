@@ -27,7 +27,7 @@ const Cart = (props) => {
       "https://newinput-8da77-default-rtdb.firebaseio.com/orderdata.json",
       {
         method: "POST",
-        body: JSON.stringify(data()),
+        body: JSON.stringify(data),
       }
     );
 

@@ -14,12 +14,7 @@
         width: 100%;
         align-self: self-start;
         justify-content: start;
-        @media (width < 580px) {
-     
-            width: 100%;  
-       
-    
-           }
+        
         
     }
   }

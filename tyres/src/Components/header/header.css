@@ -48,6 +48,15 @@
       
     }
 }
+.cart{
+  display: flex;
+  @media (width < 400px) {
+     margin: 0;
+     
+  }
+
+
+}
 .listmenu{
 
      border-bottom: 2px solid white;
@@ -76,10 +85,34 @@
     color: wheat;
     font-size: 17px;
 
+    @media (width  < 500px) {
+       padding: 0;
+       border-radius: 5px 20px 5px 30px;
+       padding: 0 9px;
+       background: white;
+       border: 1px solid black;
+       color: black;
+    }
+
+
+}
+
+.header-button:hover{
+
+
+  @media (width < 500px) {
+      background-color: rgb(36, 10, 10);
+  }
 }
 .cartimg{
     width: 30px;
     background-color: aliceblue;
     height: 30px;
     margin-right: 4vh;
+
+    @media (width < 500px) {
+       width: 20px;
+       height: 20px;
+       margin-left: 1vh;
+    }
 }

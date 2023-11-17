@@ -1,4 +1,10 @@
 import tireimage from "../china-tyre-1000x1000-removebg-preview.png";
+import image1 from '../../Components/Tyres/cat-thumb-commercial.png'
+import image2 from '../../Components/Tyres/cat-thumb-light-truck.png'
+import image3 from '../../Components/Tyres/cat-thumb-passenger.png'
+import image4 from '../../Components/Tyres/cat-thumb-small-suv.png'
+import image5 from '../../Components/Tyres/Tire-Espia-EPZII-side.png'
+
 
 const Dummy_tires = [
   {
@@ -17,7 +23,7 @@ const Dummy_tires = [
     id: "ti2",
     name: "suzuki china",
     Size: "20 -60 R 16",
-    image: tireimage,
+    image: image5,
     tyre_type: "Radical",
     Rim_Diam: " 16 Inch",
     vehicle: "car",
@@ -26,8 +32,8 @@ const Dummy_tires = [
   {
     key: "id",
     id: "ti3",
-    image: tireimage,
-    name: "Toyota new tire",
+    image: image3,
+    name: "PASSENGER Car",
     Size: "20 -60 R 16",
     tyre_type: "Radical",
     Rim_Diam: " 16 Inch",
@@ -37,8 +43,8 @@ const Dummy_tires = [
   {
     key: "id",
     id: "ti4",
-    image: tireimage,
-    name: "radical tire ",
+    image: image2,
+    name: "SUV TIRES ",
     Size: "20 -60 R 16",
     tyre_type: "Radical",
     Rim_Diam: " 16 Inch",
@@ -48,8 +54,8 @@ const Dummy_tires = [
   {
     key: "id",
     id: "ti5",
-    image: tireimage,
-    name: "GoodDay Brand",
+    image: image1,
+    name: "TRUCK TIRES",
     Size: "20 -60 R 16",
     tyre_type: "Radical",
     Rim_Diam: " 16 Inch",
@@ -59,8 +65,8 @@ const Dummy_tires = [
   {
     key: "id",
     id: "ti6",
-    image: tireimage,
-    name: "xmas pro tire",
+    image: image4,
+    name: "CROSSOVER TIRES",
     Size: "20 -60 R 16",
     tyre_type: "Radical",
     Rim_Diam: " 16 Inch",

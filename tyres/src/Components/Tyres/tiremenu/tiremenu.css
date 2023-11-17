@@ -1,24 +1,30 @@
-.collections
-    {
+.collections{
         justify-content: space-around;
         align-items: center;
         display: flex;
         width: 70%;
-        background: rgba(65, 55, 55, 0.651);
+        
         color: wheat;
         border-bottom: 1px solid white;
          box-sizing: border-box;
          margin: 10px;
+        
         animation: tires 1s ease-in-out;
         overflow-y: hidden;
         overflow-x: hidden;
 
         @media (width < 800px) {
             width: 100%;
-            background-color: rgb(255, 238, 238);
             color: black;
             align-items: self-start;
             border-bottom: 1px solid rgb(255, 252, 252);
+
+            @media (width < 480px) {
+     
+                width: 100%;   
+                display: flex;
+           
+               }
         }
 
       
@@ -30,21 +36,46 @@
         color: white;
         font-weight: bold;
         font-style: oblique;
+        display: none;
+        @media (width < 570px) {
+display: flex;
+            width: 100%;
+
+          }
+        }
+
+        p{
+font-size: 15px;
+color: black;
+margin-left: 5vh;
+@media (width < 479px) {
+    font-size: 13px;
+}
+        }
+
+        .discription{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            @media ( width < 490px) {
+                display: none;
+            }
         }
 .timages{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+
+    @media (width < 500px) {
+         width: 120px;
+         height: 120px;
+    }
 }
-h5{
-    font-weight: 900;
-    font-size: 19px;
-    color: black;
-}
+
 .image{
     border-right: 2px solid white;
-    width: 30%;
+    width: 50%;
     @media (width < 800px) {
-       
+         width: 200px;
         border-right: 1px solid rgb(0, 0, 0);
     }
 }
@@ -52,6 +83,12 @@ h5{
     padding: 5px 20px;
     background-color: brown;
     border: none;
+
+    
+   @media (width < 470px) {
+
+    padding: 0;
+  }
 }
 
 @keyframes tires {
@@ -60,5 +97,28 @@ h5{
         to{
         opacity: 3; transform: translateY(0);}
 
+}
+.pricepage{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+.reviewpage{
+    width: 100%;
+  display: none; 
+  border-bottom: 3px solid rgb(49, 5, 5);
+  @media (width < 490px) {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+  }
+}
+h5{
+    font-weight: 900;
+    font-size: 23px;
+    color: black;
 }
 

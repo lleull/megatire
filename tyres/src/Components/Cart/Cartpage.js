@@ -1,36 +1,35 @@
 import React from "react";
-import { useContext } from "react";
-import Cartcontext from "../../store/store";
+
 import "./cartitem.css";
+
 const Cartpage = (props) => {
-  const { items } = useContext(Cartcontext);
+
   return (
     <div>
-      {items.map((item) => {
-        return (
+      {props.checkoutpag && (
+        <div>
           <li className="cart-item">
             <div>
               <div className="imageandname">
                 <div className="imgname">
-                  <h2>{item.name}</h2>
-                  <img className="cartimage" src={item.image} alt="img" />
+                  <h2 className="itemname">{props.name}</h2>
+                  <img className="cartimage" src={props.image} alt="img" />
                 </div>
               </div>
 
               <div className="summery">
-                <span className="price">{item.price}</span>
-                <span className="amount">x{item.amount}</span>
+                <span className="price">{props.price}</span>
+                <span className="amount">x{props.amount}</span>
               </div>
             </div>
             <div className="action">
-              <button onClick={props.onAdd}>+</button>
-              <button onClick={props.onRemove}>-</button>
+              <button onClick={props.onRemove}>x</button>
             </div>
           </li>
-        );
-      })}
+        </div>
+      )}
     </div>
-  );
+  )
 };
 
 export default Cartpage;

@@ -11,6 +11,8 @@
     @media (width < 800px) {
         width: 0;
         margin: 20px;
+        width: 20%;
+       
     }
 
 
@@ -21,6 +23,9 @@
     font-weight: 600;
     color: black;
     font-family: cursive;
+    @media (width < 550px) {
+        font-size: 12px;
+    }
 }
 
 .submitbutton{
@@ -28,7 +33,7 @@
     padding: 17px 25px;
     background-color: black;
     border-radius: 20px;
-    color: white;
-    font-weight: 800;
+    color: rgb(7, 121, 77);
+    font-weight: 400;
     font-family: fantasy;
 }

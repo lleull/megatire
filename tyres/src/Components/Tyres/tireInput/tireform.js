@@ -27,7 +27,6 @@ const Tireform = (props) => {
         <Input
           ref={inputvalue}
           input={{
-            type: "text",
             max: "5",
             min: "0",
             id: "amount",
@@ -39,6 +38,7 @@ const Tireform = (props) => {
         <button type="submit" className="submitbutton">
           Buy Tire
         </button>
+        <p className="prices">Price: ${props.price}</p>
         <p>{checkamount && <p>error while shoping</p>}</p>
       </form>
     </div>

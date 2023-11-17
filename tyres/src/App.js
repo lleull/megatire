@@ -6,6 +6,7 @@ import Header from "./Components/header/header";
 import Homepage from "./Components/Homepage/Homepage";
 import TireCollection from "./Components/Tyres/tirescollection/TireCollection";
 import About from "./Components/About/About";
+import Carview from "./Components/CarView/Carvire";
 
 const App = () => {
   const [cartspage, setcartspage] = useState(false);
@@ -17,7 +18,9 @@ const App = () => {
  
           <Header displaycarts={displaycart} />
           <div className="App">
+          <Carview/>
             <Homepage />
+           
             <TireCollection closecart={displaycart} />
 
             {cartspage && <Cart displaycarts={displaycart} />}

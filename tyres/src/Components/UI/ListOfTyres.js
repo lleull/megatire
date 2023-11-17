@@ -17,6 +17,7 @@ const Dummy_tires = [
     vehicle: "car",
     price: "40000",
     image: tireimage,
+    
   },
   {
     key: "id",

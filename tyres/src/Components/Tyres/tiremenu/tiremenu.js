@@ -17,17 +17,21 @@ const Tiremenu = (props) => {
       image: props.image,
     });
   };
+  
 
   return (
     <>
       <li className="collections">
+     
         <div className="image">
+       
           <img className="timages" alt="imagess" src={props.image} />
-          <h3 className="name">{props.name}</h3>
+          <h3 className="nametire">{props.name}</h3>
           <button onClick={() => setistrue(!istrue)} className="review">
             Review
           </button>
         </div>
+      
         <div className="discription">
           <h5>descripition</h5>
           <p>size: {props.size}</p>
@@ -35,12 +39,13 @@ const Tiremenu = (props) => {
 
           <p>rim: {props.rim}</p>
           <p>vechile: {props.vechile}</p>
-          <h2 className="pricepage">price: {props.price}</h2>
+        
         </div>
 
         <div className="actions">
-          <Tireform additemtocart={HandleItemsToCart} />
+          <Tireform price={props.price} additemtocart={HandleItemsToCart} />
         </div>
+       
       </li>
       <div className="reviewpage">
         {istrue && (
@@ -53,9 +58,11 @@ const Tiremenu = (props) => {
             <p>rim: {props.rim}</p>
             <p>vechile: {props.vechile}</p>
             <h2 className="pricepage">price: {props.price}</h2>
+           
           </>
         )}
       </div>
+     
     </>
   );
 };

@@ -5,6 +5,10 @@
     justify-content: center;
     background: linear-gradient(120deg, rgb(36, 28, 28), white);
    margin-top: 10vh;
+   @media (width < 490px) {
+    height: 53vh;
+    margin: 0;
+   }
 }
 
 .imgclass{
@@ -37,7 +41,7 @@
     border-radius: 20px;
     @media (width < 800px) {
         padding: 0;
-        height: 60px;
+        height: 40px;
         background-color: rgb(0, 0, 0);
         padding: 0 23px;
         color: wheat;
@@ -48,6 +52,7 @@
 
     @media (width < 800px) {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 }
@@ -74,6 +79,7 @@ margin: 7vh;
     animation: sumer 1s ease-in-out;
     @media (width < 800px) {
         display: flex;
+      
          margin: 0;
         padding: 0;
      

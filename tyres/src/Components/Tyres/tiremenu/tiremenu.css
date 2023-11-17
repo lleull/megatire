@@ -3,11 +3,11 @@
         align-items: center;
         display: flex;
         width: 90%;
-        
+        gap: 50px;
         color: wheat;
-        border-bottom: 1px solid white;
          box-sizing: border-box;
          margin: 10px;
+         border-bottom: 2px solid black;
         
         animation: tires 1s ease-in-out;
         overflow-y: hidden;
@@ -15,9 +15,9 @@
 
         @media (width < 800px) {
             width: 100%;
+            border: none;
             color: black;
             align-items: self-start;
-            border-bottom: 1px solid rgb(255, 252, 252);
 
             @media (width < 500px) {
      
@@ -63,9 +63,15 @@ margin-left: 5vh;
             display: flex;
             flex-direction: column;
             margin: 5px;
+            margin-right: 40vh;
             @media ( width < 490px) {
                 display: none;
             }
+        }
+        .nametire{
+            font-size: 17px;
+            color: black;
+            font-weight: 600;
         }
 .timages{
     width: 200px;
@@ -107,19 +113,25 @@ margin-left: 5vh;
 
 }
 .pricepage{
-    color: rgb(43, 7, 80);
+    color: rgb(255, 255, 255);
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: 400;
+    width: 200px;
+    @media (width < 500px) {
+        width: 400px;
+    }
 
 }
 .reviewpage{
     width: 100%;
   display: none; 
+  
   border-bottom: 3px solid rgb(49, 5, 5);
   @media (width < 490px) {
      display: flex;
+     margin: 20px;
      justify-content: center;
      align-items: center;
      flex-direction: column;

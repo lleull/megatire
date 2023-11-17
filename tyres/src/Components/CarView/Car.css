@@ -1,0 +1,51 @@
+.carview{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../UI/pexels-photo-3651786.jpeg');
+    background-size: cover;
+    display: none;
+    
+   
+
+    @media (width < 500px) {
+        display: flex;
+        background-blend-mode:hard-light;
+        height: 90vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+.megas{
+    width: 300px;
+    color: rgb(0, 26, 87);
+    font-size: 43px;
+    font-family: sans-serif;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    padding: 10px 40px;
+    
+    border-radius: 50%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+/* .signin{
+    width: 50%;
+    padding: 20px 20px;
+    background-color: rgba(0, 128, 128, 0.685);
+    border: none;
+    border-radius: 20px;
+    font-size: 23px;
+} */
+span{
+    font-size: 23px;
+    font-family: sans-serif;
+    color: rgb(255, 252, 252);
+  
+
+}

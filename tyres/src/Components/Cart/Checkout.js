@@ -106,7 +106,7 @@ const Checkout = (props) => {
       </div>
       </>
       }
-      {SuccesfullyOrdered && <h3 className="successmessage">Succesfully Ordered Your Package will Delivered as soon as possible...</h3>}
+      {SuccesfullyOrdered && <h3 className="successmessage">Succesfully Ordered Thanks for Chocing Us</h3>}
     </form>
   );
 };

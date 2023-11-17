@@ -31,15 +31,16 @@ const cartreducer = (state, action) => {
     };
   }
   if (action.type === "REMOVE") {
-         const idchecker = state.items.findIndex((item) => item.id === action.item.id)
+         const idchecker = state.items.findIndex((item) => item.id === action.id)
         const exisitingItems = state.items[idchecker]
           const updatedTotalamount = state.totalAmount - exisitingItems.price * exisitingItems.amount
           let updatedItems;
+          
           if(exisitingItems.amount === 1) {
             updatedItems = state.items.filter((item) => item.id !== action.id)
           }else{
-           const  updatedItem = {...exisitingItems, amount: exisitingItems.amount - 1}
-            updatedItems = [...state.items]
+           const  updatedItem = {exisitingItems, amount: exisitingItems.amount - 1}
+           updatedItems = [...state.items]
            updatedItems[exisitingItems] = updatedItem
           }
       

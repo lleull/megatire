@@ -1,0 +1,52 @@
+.overall{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+    
+    
+    border-top: 2px solid rgb(3, 3, 43);
+}
+.headd{
+    background: linear-gradient(120deg, rgb(78, 1, 1), rgb(31, 1, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 25px;
+    text-align: center;
+    color: transparent;
+}
+.comment{
+
+    font-size: 15px;
+    width: 40%;
+    color: rgba(255, 255, 255, 0.877);
+}
+.feed{
+    text-align: center;
+    
+}
+.Cards{
+    display: flex;
+    flex-direction:column ;
+    width: 400px;
+  flex-grow: 1;
+  border-radius: 20px;
+    margin: 30px;
+    background: rgb(2, 73, 73);
+    border-top-right-radius: 10px 50px;
+    border: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (width < 700px) {
+        width: 200px;
+    }
+}
+.images{
+    background: white;
+    margin: 15px;
+    border: 2px solid red;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

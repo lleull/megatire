@@ -1,0 +1,55 @@
+.display{
+    
+   
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+     width: 70%;
+  
+
+    @media (width < 500px) {
+        width: 0;
+       margin: 0;
+       margin-right: 30vh;
+      
+       
+    }
+    .prices{
+        font-size: 15px;
+        color: red;
+        font-weight: 500;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 90px;
+    }
+
+
+
+}
+.labels{
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+    font-family: cursive;
+    @media (width < 550px) {
+        font-size: 12px;
+    }
+}
+
+.submitbutton{
+    margin-top: 10vh;
+    padding: 17px 45px;
+    background-color: black;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+  
+   
+
+    @media (width < 500px) {
+        /* padding: 10px 20px; */
+        margin: 0;
+       
+    }
+}

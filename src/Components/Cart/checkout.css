@@ -1,0 +1,81 @@
+.myform {
+  margin: 1rem 0;
+  height: 19rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 400px;
+
+  @media (width < 490px) {
+    width: 300px;
+  }
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.control .myinput {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.successmessage{
+  font-size: 17px;
+  color: rgb(9, 54, 54);
+  font-family: cursive;
+  font-weight: 300;
+  @media (width  < 500px) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    font-size: 23px;
+  }
+}
+
+.action button {
+  font: inherit;
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(77, 66, 66);
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+
+.action button:hover,
+.action button:active {
+  background-color: #ffe6dc;
+}
+
+.action.submit {
+  border: 1px solid #5a1a01;
+  background-color: #5a1a01;
+  color: white;
+}
+
+.action.submit:hover,
+.actionss .submit:active {
+  background-color: #7a2706;
+}
+
+.invalid label {
+  color: #ca3e51;
+}
+
+.invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
+}

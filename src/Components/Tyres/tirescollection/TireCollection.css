@@ -1,0 +1,46 @@
+.tirescollection{
+   width: 100%;
+   display: flex;
+    align-items: center;
+
+   flex-direction: column;
+   background: linear-gradient(230deg, rgb(117, 106, 106), rgb(20, 4, 4));
+   animation: tires 1s ease-in;
+   overflow-y: hidden;
+   overflow-x: hidden;
+
+   @media (width < 800px) {
+     margin: 0;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+  
+    
+     
+
+
+   @media (width < 480px) {
+     
+    width: 100%;   
+   
+ 
+   align-items: flex-start;
+    justify-content: start;
+    
+   }
+   }
+
+   
+}
+.texttag{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-style: oblique;
+
+    @media (width < 500px) {
+      font-size: 19px;
+      color: black;
+      font-family: cursive;
+    }
+}

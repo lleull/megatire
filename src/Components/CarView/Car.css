@@ -1,0 +1,76 @@
+.carview{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../UI/pexels-photo-3651786.jpeg');
+    background-size: cover;
+    
+    display: none;
+    
+   
+
+    @media (width < 500px) {
+        display: flex;
+        background-blend-mode: soft-light;
+        height: 100vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+.megas{
+    width: 400px;
+   
+    font-size: 43px;
+    font-family: sans-serif;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    padding: 10px 40px;
+    
+    border-radius: 50%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+.wellc::first-letter{
+    font-size:70px;
+}
+.wellc{
+    font-weight: 800;
+    font-size: 44px;
+    background: linear-gradient(190deg, rgb(0, 185, 185),rgb(2, 1, 1), rgb(25, 0, 255)   );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    color: transparent;
+    animation: texts 50s infinite ease-in-out  ;
+}
+@keyframes texts {
+    0%{
+        background-position: 0 100%;
+    }
+    30%{
+        background-position: 50% 200%;
+    }
+    50%{
+        background-position: 200% 100%;
+    }
+    70%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+
+}
+
+span{
+    font-size: 23px;
+    font-family: sans-serif;
+    color: rgb(255, 252, 252);
+  
+
+}

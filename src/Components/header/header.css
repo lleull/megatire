@@ -1,0 +1,148 @@
+.navbar{
+  position: fixed;
+    width: 100%;
+    height: 80px;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 36, 26);
+    align-items: center;
+    color: wheat;
+    z-index: 2000;
+}
+.menubar{
+ display: none;
+
+
+ @media (width < 600px) {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    left: 70%;
+ }
+}
+
+
+
+.amountnum{
+    margin-left: 10px;
+    padding: 5px 5px;
+    font-size: 16px;
+    background-color: wheat;
+    color: black;
+  border-radius: 50%;
+  @media (width < 500px) {
+    position: sticky;
+     background-color: black;
+     color: white;
+     padding: 2px 5px;
+    font-size: 13px;
+    
+    
+  }
+}
+.cancel{
+  position: relative;
+  left: 40%;
+  top: 0;
+}
+.unordered{
+ 
+    margin: 35px;
+    padding: 10px 20px;
+  
+}
+.cart{
+  display: flex;
+
+  @media (width < 400px) {
+ 
+     padding: 0;
+  }
+
+
+}
+.listmenu{
+
+     color: rgb(8, 7, 7);
+    margin: 0 40px;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 400;
+    margin: 18px;
+    border: 2px solid rgb(119, 118, 118);
+}
+.headeroption{
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: menuease 1s ease-in-out;
+  }
+  @keyframes menuease {
+    0%{
+      opacity: 0;
+      transform:  translateX(120px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.header-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1px 40px;
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    font-size: 17px;
+    background-color: white;
+
+    @media (width  < 500px) {
+      background-color: white;
+       color: black;
+       border: 1px solid black;
+       padding: 0;
+    }
+
+
+}
+.cancel{
+  background-color: aliceblue;
+}
+.shopcar{
+  color: rgb(0, 0, 0);
+font-size: 15px;
+@media (width < 550px) {
+  display: none;
+  
+}
+}
+
+.header-button:hover{
+
+
+  @media (width < 500px) {
+      background-color: rgb(36, 10, 10);
+  }
+}
+.cartimg{
+    width: 30px;
+    background-color: aliceblue;
+    height: 30px;
+    margin-right: 4vh;
+
+    @media (width < 500px) {
+       width: 30px;
+       height: 30px;
+       margin-left: 1vh;
+    }
+}

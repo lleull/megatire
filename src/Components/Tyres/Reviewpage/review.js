@@ -5,26 +5,26 @@ import './review.css'
 const Review = (props) => {
   return(createPortal(
     <>
-    <div onClick={props.action} className='backdrop'>
+    <div onClick={props.action} className='backdrops'>
 
     </div>
     <div className='modals'>
 
    
-   <div className='modal'>
+   <div className='modalss'>
 
    
     <div className="reviewpage">
     {props.istrue &&
     (
       <>
-        <h5>descripition</h5>
+        <img src={props.image} alt='img' className='descimg'/>
         <h3>Tire Name : {props.name}</h3>
-        <p>size: {props.size}</p>
-        <p>tire: {props.tire}</p>
+        <p className='desc'>size: {props.size}</p>
+        <p className='desc'>tire: {props.tire}</p>
 
-        <p>rim: {props.rim}</p>
-        <p>vechile: {props.vechile}</p>
+        <p className='desc'>rim: {props.rim}</p>
+        <p className='desc'>vechile: {props.vechile}</p>
         <h2 className="pricepage">price: {props.price}</h2>
        
       </>

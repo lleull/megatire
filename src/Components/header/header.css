@@ -82,6 +82,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    position: fixed;
     animation: menuease 1s ease-in-out;
   }
   @keyframes menuease {

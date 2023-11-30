@@ -2,8 +2,7 @@
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 
-    background-color: rgb(206, 188, 188);
-    padding: 10px 50px;
+    background-color: rgb(219, 211, 211);
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -12,8 +11,9 @@
     @media (width  < 800px) {
         padding: 0;
         width: 100%;
-        align-self: self-start;
-        justify-content: start;
+        background-color: rgb(82, 60, 60);
+        /* align-self: self-start;
+        justify-content: start; */
         
         
     }

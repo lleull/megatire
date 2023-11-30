@@ -19,7 +19,7 @@ const Cartpage = (props) => {
 
               <div className="summery">
                 <span className="price">{props.price}</span>
-                <span className="amount">x{props.amount}</span>
+                <span className="amount">X{props.amount}</span>
               </div>
             </div>
             <div className="action">

@@ -36,7 +36,7 @@ const Tireform = (props) => {
           }}
         />
         <button type="submit" className="submitbutton">
-          Buy Tire
+          ADD
         </button>
         <p className="prices">Price: ${props.price}</p>
         <p>{checkamount && <p>error while shoping</p>}</p>

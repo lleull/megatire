@@ -32,7 +32,7 @@ const Tiremenu = (props) => {
           <img className="timages" alt="imagess" src={props.image} />
           <h3 className="nametire">{props.name}</h3>
           <button onClick={handlereview} className="review">
-            Review
+            Review TIRE
           </button>
         </div>
       
@@ -50,7 +50,7 @@ const Tiremenu = (props) => {
           <Tireform price={props.price} additemtocart={HandleItemsToCart} />
         </div>
        
-       {istrue && <Review action={handlereview} name={props.name} istrue={istrue}ice size={props.size} tire={props.tire} rim={props.rim} vechile={props.vechile} price={props.price}/> }
+       {istrue && <Review image={props.image} action={handlereview} name={props.name} istrue={istrue}ice size={props.size} tire={props.tire} rim={props.rim} vechile={props.vechile} price={props.price}/> }
       </li>
      
      
